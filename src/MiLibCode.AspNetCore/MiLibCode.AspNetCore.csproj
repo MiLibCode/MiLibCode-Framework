@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MiLibCode.Infrastructure\MiLibCode.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MiLibCode\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExtCore.WebApplication" Version="4.0.0-alpha3" />
+  </ItemGroup>
+
+</Project>
