@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MiLibCode.Infrastructure" Version="0.0.1-beta1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--<ProjectReference Include="..\..\..\..\src\MiLibCode.Infrastructure\MiLibCode.Infrastructure.csproj" />-->
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if not exist $(OutDir)..\..\..\..\..\BasicWebExample\Modules  mkdir $(OutDir)..\..\..\..\..\BasicWebExample\Modules" />
+    <Exec Command="copy $(OutDir)$(TargetName).dll $(OutDir)..\..\..\..\..\BasicWebExample\Modules\$(TargetName).dll /Y" />
+    <!--<Exec Command="echo After Build: $(OutDir)$(TargetName).dll" />-->
+  </Target>
+</Project>

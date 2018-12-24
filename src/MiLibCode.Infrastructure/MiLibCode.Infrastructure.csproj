@@ -3,6 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace />
+    <Version>0.0.1-beta1</Version>
+    <Authors>Moses Ibiwoye</Authors>
+    <Company>Moses IbiwoyeMoses Ibiwoye</Company>
+    <Description>Free, open source and cross-platform framework for creating modular and extendable web applications based on ASP.NET Core. Heavily Inspired By ExtCore and Abp</Description>
+    <Copyright>Copyright © 2018 Moses Ibiwoye</Copyright>
+    <RepositoryUrl>https://github.com/MiLibCode/MiLibCode-Framework</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
